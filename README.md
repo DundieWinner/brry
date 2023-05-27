@@ -1,6 +1,6 @@
 # 🫐 Brry Wallet
 
-This is a cross-platform ₿ Bitcoin Lightning Cashu wallet with support on web, iOS, and Android.
+This is a cross-platform Bitcoin Lightning Cashu wallet with support on web, iOS, and Android.
 
 
 This project was bootstrapped with `npm create tamagui`.

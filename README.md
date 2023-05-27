@@ -1,6 +1,6 @@
 # 🫐 Brry Wallet
 
-This monorepo contains a cross-platform Bitcoin Lightning [Cash](https://github.com/cashubtc) wallet with support on web, iOS, and Android.
+This monorepo contains a cross-platform Bitcoin Lightning [Cashu](https://github.com/cashubtc) wallet with support on web, iOS, and Android.
 
 
 This project was bootstrapped with `npm create tamagui`.

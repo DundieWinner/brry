@@ -1,4 +1,8 @@
-# Tamagui + Solito + Next + Expo Monorepo
+# Brry Wallet
+
+
+
+### Bootstrapped From:
 
 ```sh
 npm create tamagui

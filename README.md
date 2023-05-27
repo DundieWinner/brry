@@ -2,18 +2,21 @@
 
 This monorepo contains a cross-platform Bitcoin Lightning [Cashu](https://github.com/cashubtc) wallet with support for web, iOS, and Android.
 
+## Supported [Cashu NUTS](https://github.com/cashubtc/nuts)
 
-This project was bootstrapped with `npm create tamagui`.
+- [ ] 1: Mint public keys
+- [ ] 2: Keysets and keyset IDs
+- [ ] 3: Request minting
+- [ ] 4: Minting tokens
+- [ ] 5: Melting tokens
+- [ ] 6: Splitting tokens
+- [ ] 7: Token spendable check
+- [ ] 8: Overpaid Lightning fees
+- [ ] 9: Mint info
 
-## 📦 Included packages
+## 🗂 Project organization
 
-- [Tamagui](https://tamagui.dev) 🪄
-- [solito](https://solito.dev) for cross-platform navigation
-- Expo SDK
-- Next.js
-- Expo Router
-
-## 🗂 Folder layout
+This project was bootstrapped with `npm create tamagui`
 
 The main apps are:
 
@@ -25,8 +28,6 @@ The main apps are:
   - `app` you'll be importing most files from `app/`
     - `features` (don't use a `screens` folder. organize by feature.)
     - `provider` (all the providers that wrap the app, and some no-ops for Web.)
-
-You can add other folders inside of `packages/` if you know what you're doing and have a good reason to.
 
 ## 🏁 Start the app
 
@@ -40,13 +41,7 @@ To see debug output to verify the compiler, add `// debug` as a comment to the t
 
 - Expo local dev: `yarn native`
 
-## UI Kit
-
-Note we're following the [design systems guide](https://tamagui.dev/docs/guides/design-systems) and creating our own package for components.
-
-See `packages/ui` named `@my/ui` for how this works.
-
-## 🆕 Add new dependencies
+## 🆕 Adding new dependencies
 
 ### Pure JS dependencies
 
@@ -70,7 +65,7 @@ cd ..
 yarn
 ```
 
-## Update new dependencies
+## Updating dependencies
 
 ### Pure JS dependencies
 
@@ -81,10 +76,3 @@ yarn upgrade-interactive
 You can also install the native library inside of `packages/app` if you want to get autoimport for that package inside of the `app` folder. However, you need to be careful and install the _exact_ same version in both packages. If the versions mismatch at all, you'll potentially get terrible bugs. This is a classic monorepo issue. I use `lerna-update-wizard` to help with this (you don't need to use Lerna to use that lib).
 
 You may potentially want to have the native module transpiled for the next app. If you get error messages with `Cannot use import statement outside a module`, you may need to use `transpilePackages` in your `next.config.js` and add the module to the array there.
-
-### Deploying to Vercel
-
-- Root: `./apps/next`
-- Install command to be `yarn set version berry && yarn install`
-- Build command: leave default setting
-- Output dir: leave default setting
